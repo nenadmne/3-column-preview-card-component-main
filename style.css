@@ -1,0 +1,142 @@
+
+* {
+    Font-size: 15px;
+}
+
+body, html {
+    min-width: 375px;
+    width: 100%;
+    height: auto;
+}
+
+body, button {
+    margin: 0;
+}
+
+body {
+    padding: 10% 5%;
+    background-color:hsl(0, 0%, 95%);
+}
+
+body, main, .sedans, .suvs, .lux {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+main, .sedans, .suvs, .lux {
+    flex-direction: column;
+}
+
+main {
+    min-width:337.5px;
+    width: 100%;
+    padding: 0%;
+    height: auto;
+}
+
+.sedans, .suvs, .lux {
+    padding: 15%;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    color: hsl(0, 0%, 95%);
+    font-size: 2.5rem;
+}
+
+p, button {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+}
+
+img, h1, p {
+    margin: 0 0 10% 0;
+}
+
+button {
+    width: 50%;
+    padding: 5%;
+    background-color: hsl(0, 0%, 95%);
+    border: 0;
+    border-radius: 2rem;
+}
+
+.sedans {
+    border-radius: 1rem 1rem 0 0;
+}
+
+.lux {
+    border-radius: 0 0 1rem 1rem;
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.sedans button {
+    color:hsl(31, 77%, 52%);;
+}
+
+.suvs button {
+    color: hsl(184, 100%, 22%);
+}
+
+.lux button {
+    color:hsl(179, 100%, 13%);
+}
+
+.sedans button:hover, .sedans{
+    background-color:hsl(31, 77%, 52%);
+}
+
+.suvs button:hover, .suvs {
+    background-color:hsl(184, 100%, 22%);
+}
+
+.lux button:hover, .lux {
+    background-color:hsl(179, 100%, 13%);
+    
+}
+
+.lux button:hover, .suvs button:hover, .sedans button:hover {
+    border: 1px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+    cursor: pointer;
+}
+
+@media (min-width: 576px){
+
+    body {
+        padding: 10%;
+    }
+
+    main {
+        flex-direction: row;
+        width: 900px;
+        height: auto;
+    }
+
+    .sedans {
+        border-radius: 1rem 0rem 0 1rem;
+    }
+    
+    .lux {
+        border-radius: 0 1rem 1rem 0rem;
+    }
+
+    .sedans, .suvs, .lux {
+        padding: 5%;
+        flex-basis: 33.33%;
+    }
+
+    button {
+        width: 70%;
+        padding: 5%;
+    }
+
+    .sedans p, .suvs p, .lux p {
+        margin-bottom: 40%;
+    }
+}
